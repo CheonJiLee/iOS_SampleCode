@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CJURLSessionViewcontroller.h"
+#import "SampleListViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    CJURLSessionViewcontroller *vc = [[CJURLSessionViewcontroller alloc] init];
-    self.window.rootViewController = vc;
+    SampleListViewController *vc = [[SampleListViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
