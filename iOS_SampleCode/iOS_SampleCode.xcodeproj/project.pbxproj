@@ -13,6 +13,12 @@
 		CEA660661FB997DC00059C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA660641FB997DC00059C17 /* LaunchScreen.storyboard */; };
 		CEA660691FB997DC00059C17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA660681FB997DC00059C17 /* main.m */; };
 		CEA660711FB9980500059C17 /* CJURLSessionViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA660701FB9980500059C17 /* CJURLSessionViewcontroller.m */; };
+		CEDC26241FBAE28500AE62CD /* AutolayoutListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC26231FBAE28500AE62CD /* AutolayoutListViewController.m */; };
+		CEDC26271FBAE2A500AE62CD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC26261FBAE2A500AE62CD /* BaseViewController.m */; };
+		CEDC262A1FBAE2D100AE62CD /* AutolayoutBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC26291FBAE2D100AE62CD /* AutolayoutBasic.m */; };
+		CEDC262D1FBAE2DB00AE62CD /* AutolayoutStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC262C1FBAE2DB00AE62CD /* AutolayoutStackView.m */; };
+		CEDC26301FBAE2E700AE62CD /* AutolayoutNestStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC262F1FBAE2E700AE62CD /* AutolayoutNestStackView.m */; };
+		CEDC26331FBAE2F800AE62CD /* AutolayoutVFL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC26321FBAE2F800AE62CD /* AutolayoutVFL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,18 @@
 		CEA660681FB997DC00059C17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEA6606F1FB9980500059C17 /* CJURLSessionViewcontroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJURLSessionViewcontroller.h; sourceTree = "<group>"; };
 		CEA660701FB9980500059C17 /* CJURLSessionViewcontroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJURLSessionViewcontroller.m; sourceTree = "<group>"; };
+		CEDC26221FBAE28500AE62CD /* AutolayoutListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutListViewController.h; sourceTree = "<group>"; };
+		CEDC26231FBAE28500AE62CD /* AutolayoutListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutListViewController.m; sourceTree = "<group>"; };
+		CEDC26251FBAE2A500AE62CD /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CEDC26261FBAE2A500AE62CD /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CEDC26281FBAE2D100AE62CD /* AutolayoutBasic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutBasic.h; sourceTree = "<group>"; };
+		CEDC26291FBAE2D100AE62CD /* AutolayoutBasic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutBasic.m; sourceTree = "<group>"; };
+		CEDC262B1FBAE2DB00AE62CD /* AutolayoutStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutStackView.h; sourceTree = "<group>"; };
+		CEDC262C1FBAE2DB00AE62CD /* AutolayoutStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutStackView.m; sourceTree = "<group>"; };
+		CEDC262E1FBAE2E700AE62CD /* AutolayoutNestStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutNestStackView.h; sourceTree = "<group>"; };
+		CEDC262F1FBAE2E700AE62CD /* AutolayoutNestStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutNestStackView.m; sourceTree = "<group>"; };
+		CEDC26311FBAE2F800AE62CD /* AutolayoutVFL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutVFL.h; sourceTree = "<group>"; };
+		CEDC26321FBAE2F800AE62CD /* AutolayoutVFL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutVFL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,18 +77,46 @@
 		CEA660581FB997DC00059C17 /* iOS_SampleCode */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC26211FBAE24F00AE62CD /* Autolayout_Sample */,
+				CEDC26201FBAE23400AE62CD /* NSURLSession_Sample */,
 				CEA660591FB997DC00059C17 /* AppDelegate.h */,
 				CEA6605A1FB997DC00059C17 /* AppDelegate.m */,
 				CE3FAE3F1FB9A3F2000E66CE /* SampleListViewController.h */,
 				CE3FAE401FB9A3F2000E66CE /* SampleListViewController.m */,
-				CEA6606F1FB9980500059C17 /* CJURLSessionViewcontroller.h */,
-				CEA660701FB9980500059C17 /* CJURLSessionViewcontroller.m */,
 				CEA660621FB997DC00059C17 /* Assets.xcassets */,
 				CEA660641FB997DC00059C17 /* LaunchScreen.storyboard */,
 				CEA660671FB997DC00059C17 /* Info.plist */,
 				CEA660681FB997DC00059C17 /* main.m */,
 			);
 			path = iOS_SampleCode;
+			sourceTree = "<group>";
+		};
+		CEDC26201FBAE23400AE62CD /* NSURLSession_Sample */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6606F1FB9980500059C17 /* CJURLSessionViewcontroller.h */,
+				CEA660701FB9980500059C17 /* CJURLSessionViewcontroller.m */,
+			);
+			path = NSURLSession_Sample;
+			sourceTree = "<group>";
+		};
+		CEDC26211FBAE24F00AE62CD /* Autolayout_Sample */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC26221FBAE28500AE62CD /* AutolayoutListViewController.h */,
+				CEDC26231FBAE28500AE62CD /* AutolayoutListViewController.m */,
+				CEDC26251FBAE2A500AE62CD /* BaseViewController.h */,
+				CEDC26261FBAE2A500AE62CD /* BaseViewController.m */,
+				CEDC26281FBAE2D100AE62CD /* AutolayoutBasic.h */,
+				CEDC26291FBAE2D100AE62CD /* AutolayoutBasic.m */,
+				CEDC262B1FBAE2DB00AE62CD /* AutolayoutStackView.h */,
+				CEDC262C1FBAE2DB00AE62CD /* AutolayoutStackView.m */,
+				CEDC262E1FBAE2E700AE62CD /* AutolayoutNestStackView.h */,
+				CEDC262F1FBAE2E700AE62CD /* AutolayoutNestStackView.m */,
+				CEDC26311FBAE2F800AE62CD /* AutolayoutVFL.h */,
+				CEDC26321FBAE2F800AE62CD /* AutolayoutVFL.m */,
+			);
+			path = Autolayout_Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDC262D1FBAE2DB00AE62CD /* AutolayoutStackView.m in Sources */,
+				CEDC26301FBAE2E700AE62CD /* AutolayoutNestStackView.m in Sources */,
 				CEA660691FB997DC00059C17 /* main.m in Sources */,
+				CEDC26271FBAE2A500AE62CD /* BaseViewController.m in Sources */,
 				CEA660711FB9980500059C17 /* CJURLSessionViewcontroller.m in Sources */,
 				CE3FAE411FB9A3F2000E66CE /* SampleListViewController.m in Sources */,
 				CEA6605B1FB997DC00059C17 /* AppDelegate.m in Sources */,
+				CEDC26331FBAE2F800AE62CD /* AutolayoutVFL.m in Sources */,
+				CEDC26241FBAE28500AE62CD /* AutolayoutListViewController.m in Sources */,
+				CEDC262A1FBAE2D100AE62CD /* AutolayoutBasic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

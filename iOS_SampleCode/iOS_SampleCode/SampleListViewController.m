@@ -7,7 +7,9 @@
 //
 
 #import "SampleListViewController.h"
+
 #import "CJURLSessionViewcontroller.h"
+#import "AutolayoutListViewController.h"
 
 @interface SampleListViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tv;
@@ -22,7 +24,8 @@ static NSString * const CellReuseIdentifier = @"CellID";
     self.title = @"Sample Code by cjswl";
     if (self) {
         self.sampleControllers = @[
-                                   [[CJURLSessionViewcontroller alloc] init]
+                                       CJURLSessionViewcontroller.new,
+                                       AutolayoutListViewController.new
                                    ];
     }
     return self;
@@ -58,6 +61,9 @@ static NSString * const CellReuseIdentifier = @"CellID";
     if([[self.sampleControllers objectAtIndex:indexPath.row] isKindOfClass:[CJURLSessionViewcontroller class]])
     {
         cell.textLabel.text = @"NSURLSession Sample";
+    } else if ([[self.sampleControllers objectAtIndex:indexPath.row] isKindOfClass:[AutolayoutListViewController class]])
+    {
+        cell.textLabel.text = @"Autolayout Sample";
     }
     return cell;
 }
