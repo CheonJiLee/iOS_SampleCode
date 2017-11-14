@@ -36,9 +36,13 @@
     NSArray *horizontalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[redView]-8-[blueView(==redView)]-20-|" options:0 metrics:nil views:views];
     NSArray *verticalConstraintRed = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[redView]-20-|" options:0 metrics:nil views:views];
     NSArray *verticalConstraintBlue = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[blueView]-20-|" options:0 metrics:nil views:views];
-    [self addConstraints:horizontalConstraint];
-    [self addConstraints:verticalConstraintRed];
-    [self addConstraints:verticalConstraintBlue];
+    
+    [NSLayoutConstraint activateConstraints:horizontalConstraint];
+    [NSLayoutConstraint activateConstraints:verticalConstraintRed];
+    [NSLayoutConstraint activateConstraints:verticalConstraintBlue];
+//    [self addConstraints:horizontalConstraint];
+//    [self addConstraints:verticalConstraintRed];
+//    [self addConstraints:verticalConstraintBlue];
     return self;
 }
 @end
