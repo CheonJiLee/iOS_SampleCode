@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE3FAE411FB9A3F2000E66CE /* SampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3FAE401FB9A3F2000E66CE /* SampleListViewController.m */; };
+		CE7EAE731FBC21C600DDDBEC /* AutolayoutAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7EAE721FBC21C600DDDBEC /* AutolayoutAnimation.m */; };
+		CE7EAE761FBC21D400DDDBEC /* AutolayoutThreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7EAE751FBC21D400DDDBEC /* AutolayoutThreeButton.m */; };
 		CEA6605B1FB997DC00059C17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6605A1FB997DC00059C17 /* AppDelegate.m */; };
 		CEA660631FB997DC00059C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA660621FB997DC00059C17 /* Assets.xcassets */; };
 		CEA660661FB997DC00059C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA660641FB997DC00059C17 /* LaunchScreen.storyboard */; };
@@ -24,6 +26,10 @@
 /* Begin PBXFileReference section */
 		CE3FAE3F1FB9A3F2000E66CE /* SampleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleListViewController.h; sourceTree = "<group>"; };
 		CE3FAE401FB9A3F2000E66CE /* SampleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleListViewController.m; sourceTree = "<group>"; };
+		CE7EAE711FBC21C600DDDBEC /* AutolayoutAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutAnimation.h; sourceTree = "<group>"; };
+		CE7EAE721FBC21C600DDDBEC /* AutolayoutAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutAnimation.m; sourceTree = "<group>"; };
+		CE7EAE741FBC21D400DDDBEC /* AutolayoutThreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutThreeButton.h; sourceTree = "<group>"; };
+		CE7EAE751FBC21D400DDDBEC /* AutolayoutThreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutThreeButton.m; sourceTree = "<group>"; };
 		CEA660561FB997DC00059C17 /* iOS_SampleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_SampleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA660591FB997DC00059C17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEA6605A1FB997DC00059C17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,12 +115,16 @@
 				CEDC26261FBAE2A500AE62CD /* BaseViewController.m */,
 				CEDC26281FBAE2D100AE62CD /* AutolayoutBasic.h */,
 				CEDC26291FBAE2D100AE62CD /* AutolayoutBasic.m */,
+				CE7EAE741FBC21D400DDDBEC /* AutolayoutThreeButton.h */,
+				CE7EAE751FBC21D400DDDBEC /* AutolayoutThreeButton.m */,
 				CEDC262B1FBAE2DB00AE62CD /* AutolayoutStackView.h */,
 				CEDC262C1FBAE2DB00AE62CD /* AutolayoutStackView.m */,
 				CEDC262E1FBAE2E700AE62CD /* AutolayoutNestStackView.h */,
 				CEDC262F1FBAE2E700AE62CD /* AutolayoutNestStackView.m */,
 				CEDC26311FBAE2F800AE62CD /* AutolayoutVFL.h */,
 				CEDC26321FBAE2F800AE62CD /* AutolayoutVFL.m */,
+				CE7EAE711FBC21C600DDDBEC /* AutolayoutAnimation.h */,
+				CE7EAE721FBC21C600DDDBEC /* AutolayoutAnimation.m */,
 			);
 			path = Autolayout_Sample;
 			sourceTree = "<group>";
@@ -192,11 +202,13 @@
 				CEDC262D1FBAE2DB00AE62CD /* AutolayoutStackView.m in Sources */,
 				CEDC26301FBAE2E700AE62CD /* AutolayoutNestStackView.m in Sources */,
 				CEA660691FB997DC00059C17 /* main.m in Sources */,
+				CE7EAE731FBC21C600DDDBEC /* AutolayoutAnimation.m in Sources */,
 				CEDC26271FBAE2A500AE62CD /* BaseViewController.m in Sources */,
 				CEA660711FB9980500059C17 /* CJURLSessionViewcontroller.m in Sources */,
 				CE3FAE411FB9A3F2000E66CE /* SampleListViewController.m in Sources */,
 				CEA6605B1FB997DC00059C17 /* AppDelegate.m in Sources */,
 				CEDC26331FBAE2F800AE62CD /* AutolayoutVFL.m in Sources */,
+				CE7EAE761FBC21D400DDDBEC /* AutolayoutThreeButton.m in Sources */,
 				CEDC26241FBAE28500AE62CD /* AutolayoutListViewController.m in Sources */,
 				CEDC262A1FBAE2D100AE62CD /* AutolayoutBasic.m in Sources */,
 			);

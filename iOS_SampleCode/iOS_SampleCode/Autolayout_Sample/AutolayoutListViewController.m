@@ -10,9 +10,11 @@
 #import "BaseViewController.h"
 
 #import "AutolayoutBasic.h"
+#import "AutolayoutThreeButton.h"
 #import "AutolayoutStackView.h"
 #import "AutolayoutNestStackView.h"
 #import "AutolayoutVFL.h"
+#import "AutolayoutAnimation.h"
 
 @interface AutolayoutListViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -32,12 +34,16 @@ static NSString * const CellReuseIdentifier = @"CellID";
         self.sampleAutolayoutVC = @[
                                     [[BaseViewController alloc] initWithTitle:@"Basic"
                                                                     viewClass:AutolayoutBasic.class],
+                                    [[BaseViewController alloc] initWithTitle:@"Three Button"
+                                                                    viewClass:AutolayoutThreeButton.class],
                                     [[BaseViewController alloc] initWithTitle:@"Stack View"
                                                                     viewClass:AutolayoutStackView.class],
                                     [[BaseViewController alloc] initWithTitle:@"Nest Stack View"
                                                                     viewClass:AutolayoutNestStackView.class],
                                     [[BaseViewController alloc] initWithTitle:@"Visual Format Language"
-                                                                    viewClass:AutolayoutVFL.class]
+                                                                    viewClass:AutolayoutVFL.class],
+                                    [[BaseViewController alloc] initWithTitle:@"Autolayout Animation"
+                                                                    viewClass:AutolayoutAnimation.class]
                                     ];
     }
     return self;
