@@ -10,6 +10,7 @@
 
 #import "CJURLSessionViewcontroller.h"
 #import "AutolayoutListViewController.h"
+#import "FileSystemViewController.h"
 
 @interface SampleListViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tv;
@@ -25,7 +26,8 @@ static NSString * const CellReuseIdentifier = @"CellID";
     if (self) {
         self.sampleControllers = @[
                                        CJURLSessionViewcontroller.new,
-                                       AutolayoutListViewController.new
+                                       AutolayoutListViewController.new,
+                                       FileSystemViewController.new
                                    ];
     }
     return self;
@@ -64,7 +66,11 @@ static NSString * const CellReuseIdentifier = @"CellID";
     } else if ([[self.sampleControllers objectAtIndex:indexPath.row] isKindOfClass:[AutolayoutListViewController class]])
     {
         cell.textLabel.text = @"Autolayout Sample";
+    } else if ([[self.sampleControllers objectAtIndex:indexPath.row] isKindOfClass:[FileSystemViewController class]])
+    {
+        cell.textLabel.text = @"FileSystem Sample";
     }
+    
     return cell;
 }
 
